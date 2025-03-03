@@ -1,8 +1,12 @@
 package e1;
 
-public class SilverBankAccount implements BankAccount{
+public class SilverBankAccount extends DecoratorBankAccount{
 
     private CoreBankAccount base = new CoreBankAccount();
+
+    public SilverBankAccount(BankAccount bankAccount) {
+        super(bankAccount);
+    }
 
     @Override
     public int getBalance() {
