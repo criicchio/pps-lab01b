@@ -1,6 +1,6 @@
 package e1;
 
-public class BankAccount {
+public class SilverBankAccount implements BankAccount{
 
     private CoreBankAccount base = new CoreBankAccount();
 
