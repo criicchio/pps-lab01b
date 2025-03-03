@@ -12,7 +12,8 @@ public class BankAccountTest {
 
     @BeforeEach
     void init(){
-        this.silverAccount = new SilverBankAccount();
+        CoreBankAccount bankAccount = new CoreBankAccount();
+        this.silverAccount = new SilverBankAccount(bankAccount);
     }
 
     @Test
